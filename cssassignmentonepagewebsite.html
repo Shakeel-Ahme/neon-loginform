@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>form</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #e3edf7 ;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .main {
+        width: 250px;
+        height: 270px;
+        padding: 10px 10px;
+        border: 2px solid #fff;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        background-color: #e3edf7;
+        box-shadow: -7px -4px 13px #fff,
+                    8px 4px 21px rgba(0,0,0,.2),
+                    inset 4px 3px 10px rgba(0,0,0,.2),
+                    inset -9px -9px 17px #fff;
+}
+
+    .main h1 {
+        text-align: center;
+        margin-top: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        margin-bottom: 25px;
+        font-weight: normal;
+    }
+    .main form input {
+        width: 90%;
+        box-sizing: border-box;
+        padding: 8px 7px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        border-radius: 20px;
+        border: 2px solid #fff;
+        background-color:#D7DBDD;
+        outline: none;
+        box-shadow: -2px -6px 10px #fff,
+                    3px 8px 14px rgba(0,0,0,.2);
+        /* margin: auto; */
+    }
+    .main form input::placeholder {
+        font-size: 12px;
+    }
+    .main form input[type="submit"]{
+        width: 60px;
+        margin-left: 85px;
+        font-size: 10px;
+        padding: 5px 13px;
+
+    }
+</style>
+<body>
+    <div class="main">
+        <h1>Log In</h1>
+        <form action="">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
